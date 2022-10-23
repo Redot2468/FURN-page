@@ -242,3 +242,34 @@ h3 {
   color: var(--color-primary);
   border-bottom: 2px solid var(--color-primary);
 }
+
+/* insta section */
+.insta__section {
+  background: url(../images/insta\ grey\ couch\ with\ two\ pillows.png);
+  height: 400px;
+  background-position: center;
+}
+
+.insta__hover {
+  transition: background-color 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  text-align: center;
+  padding-top: 180px;
+}
+
+.fa-brands {
+  color: white;
+  font-size: 40px;
+  display: none;
+}
+
+.insta__section:hover .insta__hover {
+  background-color: rgba(6, 6, 54, 0.3);
+  background-repeat: no-repeat;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.insta__section:hover .fa-brands {
+  display: contents;
+}

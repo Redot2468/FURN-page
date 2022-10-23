@@ -12,6 +12,7 @@
   --color-grey: #808080;
   --color-black: black;
   --color-white: #fff;
+  --color-price: #811600;
 }
 
 html {
@@ -98,9 +99,16 @@ h3 {
   border: 1px solid green;
 }
 
-@media screen and (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+@media screen and (min-width: 500px) {
+  .grid__1x2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .grid__1x3 {
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
   }
 }
@@ -119,26 +127,46 @@ h3 {
   margin-top: 1.5rem;
 }
 
-/* couch */
+/* sale */
 
-.couch__sale {
+.sale {
   text-align: center;
+  border: 1px solid green;
 }
 
-.couch__image {
-  width: 480px;
+.sale__image {
+  width: 100%;
 }
 
-.couch__description {
+.sale__description {
   font-size: 1.9rem;
   color: var(--color-black);
   font-weight: 500;
   transition: border-bottom 0.1s;
   padding-bottom: 0;
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 0;
 }
 
-.couch__description:hover {
+.sale__description:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+
+.sale__price {
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: var(--color-price);
+  letter-spacing: 0.5px;
+  margin-bottom: 4rem;
+}
+
+/* couch */
+.couch__sale {
+  box-shadow: 0 0 3px rgb(230, 230, 230);
+}
+
+/* chair */
+.chair__sale {
+  margin: 2rem;
+  box-shadow: 0 0 3px rgb(230, 230, 230);
 }

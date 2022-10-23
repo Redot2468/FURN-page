@@ -357,3 +357,13 @@ h3 {
 }
 
 /* best block */
+.best__background {
+  background: url(../images/best-couch.jpg) no-repeat center / cover;
+  height: 300px;
+}
+
+@media screen and (min-width: 608px) {
+  .best__background {
+    height: auto;
+  }
+}

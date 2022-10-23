@@ -7,6 +7,7 @@
 :root {
   --color-primary: #fd8f5f;
   --color-body-primary: #7f85bb;
+  --color-body-accent: #414463;
   --color-body-secondary: #5f0a44;
   --color-background: #f2e1d9;
   --color-grey: #808080;
@@ -32,7 +33,7 @@ h1,
 h2,
 h3 {
   font-family: "Inter", sans-serif;
-
+  font-weight: 800;
   color: var(--color-black);
   line-height: 1.2;
 }
@@ -40,7 +41,6 @@ h3 {
 h1 {
   font-size: 3.2rem;
   margin-bottom: 1.2rem;
-  font-weight: 800;
 }
 
 h2 {
@@ -169,4 +169,20 @@ h3 {
 .chair__sale {
   margin: 2rem;
   box-shadow: 0 0 3px rgb(230, 230, 230);
+}
+
+/* best manufacturer */
+.best {
+  background: var(--color-background);
+  border: 1px solid green;
+  padding: 2rem 2rem 5rem 3rem;
+}
+
+.best p {
+  color: var(--color-body-accent);
+  font-size: 1.6rem;
+}
+
+.best .btn {
+  margin-top: 3rem;
 }

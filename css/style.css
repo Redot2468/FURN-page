@@ -273,3 +273,14 @@ h3 {
 .insta__section:hover .fa-brands {
   display: contents;
 }
+
+/* inspired */
+
+.inspired .fa-brands {
+  color: var(--color-primary);
+  font-size: 60px;
+}
+
+.inspired .btn {
+  margin-top: 1.5rem;
+}

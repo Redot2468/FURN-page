@@ -282,6 +282,38 @@ h3 {
   display: contents;
 }
 
+/* second insta section */
+
+.insta__section2 {
+  background: url(../images/insta\ second\ grey\ couch.png);
+  height: 400px;
+  background-position: center;
+}
+
+.insta__hover {
+  transition: background-color 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  text-align: center;
+  padding-top: 180px;
+}
+
+.fa-brands {
+  color: white;
+  font-size: 40px;
+  display: none;
+}
+
+.insta__section2:hover .insta__hover {
+  background-color: rgba(6, 6, 54, 0.3);
+  background-repeat: no-repeat;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.insta__section2:hover .fa-brands {
+  display: contents;
+}
+
 /* inspired */
 
 .inspired .fa-brands {
@@ -291,6 +323,7 @@ h3 {
 
 .inspired .btn {
   margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 /* couch block*/
@@ -362,8 +395,46 @@ h3 {
   height: 300px;
 }
 
-@media screen and (min-width: 608px) {
+@media screen and (min-width: 600px) {
   .best__background {
     height: auto;
+  }
+}
+
+/* insta section */
+
+.insta__block {
+  padding: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .inspired {
+    grid-column: 1/3;
+    height: auto;
+  }
+
+  .inspired p:first-of-type {
+    max-width: 600px;
+  }
+
+  .insta__section,
+  .insta__section2 {
+    height: 300px;
+  }
+
+  .insta__section2:hover .insta__hover,
+  .insta__section:hover .insta__hover {
+    height: 300px;
+  }
+
+  .insta__hover {
+    padding-top: 135px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .inspired {
+    grid-column: 1/2;
+    padding-right: 3rem;
   }
 }

@@ -206,4 +206,39 @@ h3 {
   }
 }
 
-/* furniture */
+/* furniture types */
+
+.furniture__types {
+  max-width: 90%;
+  margin: auto;
+}
+.types {
+  text-align: center;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  padding-left: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.types li {
+  list-style: none;
+  display: inline-block;
+  margin: 1rem 1.5rem;
+}
+
+.types a {
+  text-decoration: none;
+  color: var(--color-body-accent);
+  font-size: 1.5rem;
+  padding: 1rem;
+  transition: border-bottom 0.2s;
+}
+
+.types a:hover {
+  border-bottom: 2px solid rgb(175, 175, 175);
+}
+
+.sofa a {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+}

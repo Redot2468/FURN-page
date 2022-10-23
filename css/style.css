@@ -443,18 +443,28 @@ h3 {
 /* beginning of nav section */
 
 /* search section */
+.search__products {
+  border: 1px solid green;
+}
+
 .search__section {
-  border-bottom: 1px solid rgb(204, 204, 204);
+  border-bottom: 1px solid#ddc2d9;
   width: fit-content;
+  border: 1px solid green;
 }
 
 .search {
   padding: 1rem 0;
   border: none;
+  background: inherit;
 }
 
 .search:focus {
   outline: 0;
+}
+
+.search::placeholder {
+  color: #640d56;
 }
 
 .search__bar {
@@ -465,10 +475,13 @@ h3 {
 .search__bar i {
   font-size: 18px;
   font-weight: 200;
-  color: rgb(78, 78, 78);
+  color: #410537;
 }
 
 /* card */
+.account {
+  border: 1px solid green;
+}
 .account a {
   text-decoration: none;
   font-weight: 600;
@@ -480,22 +493,78 @@ h3 {
   vertical-align: middle;
 }
 
+/* menu */
+.menu {
+  font-weight: 600;
+  color: #4f0a44;
+  margin-left: 10rem;
+  display: none;
+  border: 1px solid green;
+}
+
 /* nav list */
 
 .nav__list {
   padding-left: 0;
+  border: 1px solid green;
 }
 
 .nav__list li {
   list-style: none;
   display: inline;
-  margin-right: 2rem;
+  margin-right: 2.5rem;
 }
 
 .nav__list a {
   text-decoration: none;
   color: #4f0a44;
   font-weight: 600;
+}
+
+/* main nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
+  background: #f2e1d9;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav__logo {
+  border: 1px solid green;
+  width: 150px;
+  position: relative;
+  top: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .search__products {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .search__products {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    border: 1px solid green;
+  }
+
+  .nav__list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .menu {
+    display: none;
+  }
 }
 
 /* end of nav section */

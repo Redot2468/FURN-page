@@ -7,7 +7,7 @@
 :root {
   --color-primary: #fd8f5f;
   --color-body-primary: #7f85bb;
-  --color-body-accent: #414463;
+  --color-body-accent: #4e5175;
   --color-body-secondary: #5f0a44;
   --color-background: #f2e1d9;
   --color-grey: #808080;
@@ -108,12 +108,15 @@ h3 {
 
 @media screen and (min-width: 1000px) {
   .grid__1x3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     grid-auto-rows: minmax(100px, auto);
   }
 }
 
 /* feature */
+.feature {
+  padding-top: 2rem;
+}
 
 .feature__heading {
   margin-bottom: 0;
@@ -125,6 +128,7 @@ h3 {
 
 .feature__content {
   margin-top: 1.5rem;
+  color: var(--color-body-accent);
 }
 
 /* sale */
@@ -327,3 +331,29 @@ h3 {
     padding: 2rem;
   }
 }
+
+/* features block */
+
+.feature__block {
+  border: 2px solid green;
+  row-gap: 2rem;
+  background: var(--color-background);
+  padding: 5rem 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .feature__block {
+    column-gap: 2rem;
+    padding: 5rem 7rem;
+  }
+
+  .feature__block .feature__heading {
+    font-size: 2rem;
+  }
+
+  .feature__block .feature__content {
+    font-size: 1.5rem;
+  }
+}
+
+/* best block */

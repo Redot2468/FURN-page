@@ -466,6 +466,18 @@ h3 {
   color: rgb(78, 78, 78);
 }
 
+/* card */
+.account a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #4f0a44;
+}
+
+.card {
+  margin-left: 2.5rem;
+  vertical-align: middle;
+}
+
 /* footer section */
 footer {
   background: var(--color-footer);

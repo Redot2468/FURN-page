@@ -118,3 +118,27 @@ h3 {
 .feature__content {
   margin-top: 1.5rem;
 }
+
+/* couch */
+
+.couch__sale {
+  text-align: center;
+}
+
+.couch__image {
+  width: 480px;
+}
+
+.couch__description {
+  font-size: 1.9rem;
+  color: var(--color-black);
+  font-weight: 500;
+  transition: border-bottom 0.1s;
+  padding-bottom: 0;
+  padding: 2rem 4rem;
+}
+
+.couch__description:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}

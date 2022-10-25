@@ -4,24 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Buy your cheap, quality, and affordable furnitures at low cost"
+    />
+    <meta name="og:title" content="FURN" />
+    <meta
+      name="keywords"
+      content="furn, furn at cost, cheap and affordable furniture"
+    />
+    <title>FURN - Furniture at cost</title>
+    <!-- for the font awesome icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <!-- for the google font services -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Heebo:wght@400;500;600;700&family=Inter:wght@400;500;700;800&family=Noto+Sans+Thai:wght@400;500;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Heebo:wght@400;500;600;700&family=Inter:wght@400;500;700;800;900&family=Noto+Sans+Thai:wght@400;500;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- for the stylesheet and animations -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/hover.css" />
+
+    <!-- for the AOS scroll animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- for the scroll to top -->
+    <div class="up">
+      <a href="#"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+
+    <!-- combining all the components into a single webpage -->
+    <!-- header section and the nov -->
     <div class="nav">
       <img src="./images/navlogo.webp" alt="" class="nav__logo" />
 
@@ -35,7 +57,11 @@
       </ul>
 
       <div class="search__products">
-        <form action="" method="post" class="search__section">
+        <form
+          action="https://formspree.io/f/xwkzrvge"
+          method="POST"
+          class="search__section"
+        >
           <input
             type="text"
             class="search"
@@ -57,5 +83,392 @@
         /></a>
       </p>
     </div>
+
+    <!-- banner -->
+
+    <header>
+      <div class="hero__background">
+        <div class="banner__transparency">
+          <div class="hero__width">
+            <div class="banner__content">
+              <p class="banner__discount">70% sale off</p>
+              <h1 class="banner__heading">furniture at cost</h1>
+              <p class="banner__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                ullam veritatis culpa eveniet vero necessitatibus!
+              </p>
+              <button class="btn btn__primary">Discover More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- popular section -->
+
+      <div class="popular">
+        <h2 class="popular__heading">POPULAR PRODUCTS</h2>
+        <p class="popular__description">
+          Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+          quis viverra ornare, eros dolor interdum nulla.
+        </p>
+      </div>
+
+      <!-- furniture types -->
+
+      <div class="furniture__types">
+        <ul class="types">
+          <li class="sofa"><a href="">Sofa</a></li>
+          <li><a href="">Table</a></li>
+          <li><a href="">Chair</a></li>
+          <li><a href="">Bed</a></li>
+          <li><a href="">Lightning</a></li>
+          <li><a href="">Decore</a></li>
+        </ul>
+      </div>
+
+      <!-- first couch -->
+
+      <div class="couch__block grid grid__1x2 grid__1x3">
+        <div
+          class="sale couch__sale"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="./images/whiteandbrownchair.webp"
+            alt="brown and white couch"
+            class="sale__image couch__image"
+          />
+          <p class="sale__description couch__description">
+            Bly Microfiber / Microsuede 56" Armless Loveseat
+          </p>
+
+          <p class="sale__price">$356</p>
+        </div>
+
+        <div
+          class="sale couch__sale"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="./images/orangecouch.png"
+            alt="brown and white couch"
+            class="sale__image couch__image"
+          />
+          <p class="sale__description couch__description">
+            Bly Microfiber / Microsuede 56" Armless Loveseat
+          </p>
+
+          <p class="sale__price">$356</p>
+        </div>
+
+        <div
+          class="sale couch__sale"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="./images/greencouch.png"
+            alt="brown and white couch"
+            class="sale__image couch__image"
+          />
+          <p class="sale__description couch__description">
+            Bly Microfiber / Microsuede 56" Armless Loveseat
+          </p>
+
+          <p class="sale__price">$356</p>
+        </div>
+      </div>
+
+      <!-- best block -->
+
+      <div class="best__block grid grid__1x2">
+        <div class="best__background"></div>
+
+        <div class="best">
+          <h2 class="best__heading">BEST FURNITURE MANUFACTURER</h2>
+          <p>
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare, eros dolor interdum nulla.
+          </p>
+
+          <p>
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare, eros dolor interdum nulla.
+          </p>
+
+          <button class="btn btn__primary">Discover More</button>
+        </div>
+      </div>
+
+      <!-- chair block -->
+
+      <div class="popular">
+        <h2 class="popular__heading">PRODUCTS YOU MAY LIKE</h2>
+        <p class="popular__description">
+          Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+          quis viverra ornare, eros dolor interdum nulla.
+        </p>
+      </div>
+
+      <div class="chair__block grid grid__1x2 grid__1x3">
+        <div
+          class="sale chair__sale"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="./images/blackandredchair.png"
+            alt="brown and white couch"
+            class="sale__image chair__image"
+          />
+          <p class="sale__description chair__description">
+            Bly Microfiber / Microsuede 56" Armless Loveseat
+          </p>
+
+          <p class="sale__price">$356</p>
+        </div>
+
+        <div
+          class="sale chair__sale"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="./images/yellowchair.png"
+            alt="brown and white couch"
+            class="sale__image chair__image"
+          />
+          <p class="sale__description chair__description">
+            Bly Microfiber / Microsuede 56" Armless Loveseat
+          </p>
+
+          <p class="sale__price">$356</p>
+        </div>
+
+        <div
+          class="sale chair__sale"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="./images/whitechair.png"
+            alt="brown and white couch"
+            class="sale__image chair__image"
+          />
+          <p class="sale__description chair__description">
+            Bly Microfiber / Microsuede 56" Armless Loveseat
+          </p>
+
+          <p class="sale__price">$356</p>
+        </div>
+      </div>
+
+      <div class="btn__secondary-chair">
+        <button class="btn btn__secondary">Discover More</button>
+      </div>
+
+      <!-- insta block -->
+      <div class="insta__block grid grid__1x2 grid__1x3">
+        <div class="inspired">
+          <h3 class="inspired__heading">GET INSPIRED WITH INSTAGRAM</h3>
+          <p>
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare, eros dolor interdum nulla.
+          </p>
+          <button class="btn btn__secondary">Discover More</button>
+        </div>
+
+        <div class="insta__section">
+          <div class="insta__hover">
+            <i class="fa fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="insta__section2">
+          <div class="insta__hover">
+            <i class="fa fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- second couch section -->
+
+      <div class="popular">
+        <h2 class="popular__heading">TOP PICK</h2>
+        <p class="popular__description">
+          Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+          quis viverra ornare, eros dolor interdum nulla.
+        </p>
+      </div>
+
+      <div class="couch__block grid grid__1x2 grid__1x3">
+        <div
+          class="sale couch__sale"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="./images/afterinstagreycouch.png"
+            alt="brown and white couch"
+            class="sale__image couch__image"
+          />
+          <p class="sale__description couch__description">
+            Bly Microfiber / Microsuede 56" Armless Loveseat
+          </p>
+
+          <p class="sale__price">$356</p>
+        </div>
+
+        <div
+          class="sale couch__sale"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="./images/afterinstabrowncouch.png"
+            alt="brown and white couch"
+            class="sale__image couch__image"
+          />
+          <p class="sale__description couch__description">
+            Bly Microfiber / Microsuede 56" Armless Loveseat
+          </p>
+
+          <p class="sale__price">$356</p>
+        </div>
+
+        <div
+          class="sale couch__sale"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="./images/afterinstayellowcouch.png"
+            alt="yellow"
+            class="sale__image couch__image"
+          />
+          <p class="sale__description couch__description">
+            Bly Microfiber / Microsuede 56" Armless Loveseat
+          </p>
+
+          <p class="sale__price">$356</p>
+        </div>
+      </div>
+
+      <div class="btn__secondary-chair">
+        <button class="btn btn__secondary">Discover More</button>
+      </div>
+
+      <!-- features block -->
+
+      <div class="feature__background">
+        <div class="feature__block grid grid__1x2 grid__1x3">
+          <div
+            class="feature"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <img src="./images/fastdelivery.svg" alt="fast delivery" />
+            <h3 class="feature__heading">Fast & Free Delivery</h3>
+            <p class="feature__content">Free delivery on all orders</p>
+          </div>
+          <div
+            class="feature"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <img src="./images/securepayment.svg" alt="fast delivery" />
+            <h3 class="feature__heading">Secure Payment</h3>
+            <p class="feature__content">Free delivery on all orders</p>
+          </div>
+          <div
+            class="feature"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <img src="./images/moneyguaranteed.svg" alt="fast delivery" />
+            <h3 class="feature__heading">Money Back Guarantee</h3>
+            <p class="feature__content">Free delivery on all orders</p>
+          </div>
+          <div
+            class="feature"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <img src="./images/onlinesupport.svg" alt="fast delivery" />
+            <h3 class="feature__heading">Online Support</h3>
+            <p class="feature__content">Free delivery on all orders</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- end of the main section -->
+    </main>
+
+    <!-- footer section -->
+
+    <footer>
+      <div class="footer__block grid grid__1x2 grid__1x3">
+        <section class="logo__section">
+          <img src="./images/logo.webp" alt="logo" class="footer__logo" />
+          <p class="footer__address">
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare, eros dolor interdum nulla.
+          </p>
+          <ul class="medias">
+            <li>
+              <a href="www.twitter.com"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="www.facebook.com"><i class="fa fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="www.pinterest.com"><i class="fa fa-pinterest-p"></i> </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="list__section">
+          <p>Quick links</p>
+          <ul class="list">
+            <li><a href="">Image Licensing</a></li>
+            <li><a href="">Style Guide</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </section>
+
+        <section class="list__section">
+          <p>Shop Category</p>
+          <ul class="list">
+            <li><a href="">Image Licensing</a></li>
+            <li><a href="">Style Guide</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </section>
+
+        <section class="list__section">
+          <p>Partners</p>
+          <ul class="list">
+            <li><a href="">Image Licensing</a></li>
+            <li><a href="">Style Guide</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <p class="copyright">Copyright &copy;2022 All rights reserved</p>
+    </footer>
+
+    <!-- end of the page -->
+
+    <!-- script for the AOS scroll animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
